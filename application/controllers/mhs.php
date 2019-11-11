@@ -10,7 +10,7 @@ class mhs extends CI_Controller{
 
 
 		if (!$this->form_validation->run()==false) {
-			$this->Mmahasiswa->tambah_mhs();
+			$this->mmhs->tambah_mhs();
 			redirect('cmhs/');
 		}else {
 			redirect('cmhs/tambahmhs');
@@ -22,7 +22,7 @@ class mhs extends CI_Controller{
 		$this->form_validation->set_rules('nama','nama','required');
 
 		if ($this->form_validation->run()!=false) {
-			$this->Mmahasiswa->edit_mhs();
+			$this->mmhs->edit_mhs();
 			redirect('cmhs');
 		}else{
 			redirect('cmhs/editmhs');
@@ -31,7 +31,7 @@ class mhs extends CI_Controller{
 
 	public function hapusmhs($id) {
 		if ($id != ""){
-			$this->Mmahasiswa->hapus_mhs($id);
+			$this->mmhs->hapus_mhs($id);
 			redirect('cmhs');
 		}else{
 			redirect('cmhs');

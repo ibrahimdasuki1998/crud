@@ -16,10 +16,10 @@ class mmhs extends CI_Model
 	{
 		$data = array(
 		'nim'=>$this->input->post('nim'),
-		'nama_mhs' => $this->input->post('nama'),
-		'jenis_kelamin' => $this->input->post('jk'),
+		'nama' => $this->input->post('nama'),
+		'jk' => $this->input->post('jk'),
 		'alamat' => $this->input->post('alamat'),
-		'no_hp' => $this->input->post('no_hp'));
+		'nohp' => $this->input->post('nohp'));
 
 	return $this->db->insert('uts',$data);
 	}
@@ -28,10 +28,10 @@ class mmhs extends CI_Model
 	{
 		$data = array(
 		'nim'=>$this->input->post('nim'),
-		'nama_mhs' => $this->input->post('nama'),
-		'jenis_kelamin' => $this->input->post('jk'),
+		'nama' => $this->input->post('nama'),
+		'jk' => $this->input->post('jk'),
 		'alamat' => $this->input->post('alamat'),
-		'no_hp' => $this->input->post('no_hp'));
+		'nohp' => $this->input->post('nohp'));
 
 		$id_lama = $this->input->post('id');
 		$this->db->where('id', $id_lama);

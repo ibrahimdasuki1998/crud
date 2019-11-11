@@ -36,7 +36,7 @@
 			<tr>
 				<td>No. Hp</td>
 				<td> : </td>
-				<td><input type="text" name="no.hp" value=""></td>
+				<td><input type="text" name="nohp" value=""></td>
 			</tr>
 			<tr>
 				<td></td>

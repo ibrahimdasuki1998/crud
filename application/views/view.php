@@ -29,7 +29,7 @@
 					<th><?php echo $itemmhs['nama']; ?></th>
 					<th><?php echo $itemmhs['jk']; ?></th>
 					<th><?php echo $itemmhs['alamat']; ?></th>
-					<th><?php echo $itemmhs['no.hp']; ?></th>
+					<th><?php echo $itemmhs['nohp']; ?></th>
 					<td align ="center">
 						<a href="<?php echo base_url('cmhs/editmhs/').$itemmhs['id']; ?>">Edit</a>
 						<a href="<?php echo base_url('mhs/hapusmhs/').$itemmhs['id']; ?>" onclick="return confirm('Apakah Anda Yakin, Mau Menghapus data?') ">Hapus</a>

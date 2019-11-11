@@ -27,8 +27,8 @@
 				<td> : </td>
 				<td>
 					<select name="jk">
-						<option value="Laki-laki" <?php echo $itemmhs['jenis_kelamin'] == 'Laki-laki'?'selected':''?> >Laki-laki</option>
-						<option value="Perempuan" <?php echo $itemmhs['jenis_kelamin'] == 'Perempuan'?'selected':''?> >Perempuan</option>
+						<option value="Laki-laki" <?php echo $itemmhs['jk'] == 'Laki-laki'?'selected':''?> >Laki-laki</option>
+						<option value="Perempuan" <?php echo $itemmhs['jk'] == 'Perempuan'?'selected':''?> >Perempuan</option>
 					</select>
 				</td>
 			</tr>
@@ -40,7 +40,7 @@
 			<tr>
 				<td>No. Hp</td>
 				<td> : </td>
-				<td><input type="text" name="no.hp" value="<?php echo $itemmhs['no.hp']; ?>"></td>
+				<td><input type="text" name="nohp" value="<?php echo $itemmhs['nohp']; ?>"></td>
 			</tr>
 			<tr>
 				<td></td>

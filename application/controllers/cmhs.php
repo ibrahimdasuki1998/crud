@@ -17,7 +17,7 @@ class cmhs extends CI_Controller
 
 	public function editmhs($id)
 	{
-		$data['mhs'] = $this->Mmahasiswa->editambilmhs($id);
+		$data['mhs'] = $this->mmhs->editambilmhs($id);
 		$this->load->view('edit',$data);	
 
 	}

@@ -37,6 +37,12 @@ class mmhs extends CI_Model
 		$this->db->where('id', $id_lama);
 		return $this->db->update('uts',$data);
 	}
+
+	public function tambah(){
+		$hasil ="SELECT count(nim) as tambah FROM uuts";
+		$tampil =$this->db->query($hasil);
+		return $tampil->row()->tambah;
+	}
 	public function hapus_mhs($id){
 		return $this->db->delete('uts',array('id' =>$id));
 	}

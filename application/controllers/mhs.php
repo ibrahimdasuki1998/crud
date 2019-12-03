@@ -11,7 +11,7 @@ class mhs extends CI_Controller{
 
 		if (!$this->form_validation->run()==false) {
 			$this->mmhs->tambah_mhs();
-			redirect('cmhs/');
+			redirect('cmhs/admin');
 		}else {
 			redirect('cmhs/tambahmhs');
 		}
